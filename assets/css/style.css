@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+:root {
+    --main-border-color: rgb(186, 186, 186);
+    --main-text-color: rgb(63, 63, 63);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+#login_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 600px;
+    height: 40px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#login_container form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+#username,
+#password {
+    width: 200px;
+    padding: 5px;
+    height: 25px;
+    border: 1px solid var(--main-border-color);
+    background-color: rgb(245, 245, 245);
+}
+
+#btn_logar {
+    width: 110px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 10px;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#btn_logout {
+    width: 110px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 10px;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#not_logged_in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.fa-user {
+    font-size: 8.0rem;
+}
+
+#not_logged_in p {
+    text-align: center;
+    width: 200px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 600px;
+    height: 500px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+    overflow:auto; 
+    margin-top: 10px;
+}
+
+#title {
+    font-size: 2.0rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+#create_task {
+    display: flex;
+    column-gap: 10px;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--main-border-color);
+}
+
+#task_description_create_input {
+    width: 300px;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid var(--main-border-color);
+}
+
+#empty_task_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.fa-list-check {
+    font-size: 7.0rem;
+}
+
+#task_list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 5px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    padding: 10px;
+    column-gap: 5px;
+    border: 1px solid var(--main-border-color);
+}
+
+.task_description {
+    width: 300px;
+    font-size: 1.1rem;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: var(--main-text-color);
+}
+
+.task_description_update_input {
+    border: 1px solid var(--main-border-color);
+    background-color: rgb(245, 245, 245);
+}
+
+#priority_input {
+    border: 1px solid var(--main-border-color);
+    background-color: rgb(245, 245, 245);
+}
+
+.task_priority {
+    width: 100px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.btn_save,
+.btn_update,
+.btn_delete {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    border-radius: 10px;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 15px;
+    height: 15px;
+}
+
+.btn_update {
+    content: "editar";
+    background-color: rgb(181, 178, 18);
+}
+
+.btn_delete {
+    background-color: rgb(181, 18, 18);
+}
+
+.btn_save {
+    display: none;
+    background-color: rgb(19, 165, 11);
+}
+
+#btn_create {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background-color: rgb(19, 165, 11);
+    border-radius: 10px;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
